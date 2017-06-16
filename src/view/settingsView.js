@@ -12,7 +12,7 @@ define(function(require) {
     BaseView.prototype.initialize.apply(this,arguments);
   },
   render:function(){
-    $(this.el).html(_.template(this.templete, {name:'SettingsView',data:''}));
+    $(this.el).html(_.template(this.templete, {name:'SettingsView',data:'',button:'settingsView'}));
     BaseView.prototype.render.apply(this, arguments);
   }
 });
